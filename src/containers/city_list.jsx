@@ -25,9 +25,10 @@ function mapDispatchToProps(dispatch) {
     dispatch);
 }
 
-function mapStateToProps(state) { return {
-  cities: state.cities
-};
+function mapStateToProps(state) {
+  return {
+    cities: state.cities
+  };
 }
 
 export default connect(mapStateToProps, mapDispatchToProps) (CityList);
